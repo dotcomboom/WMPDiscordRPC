@@ -77,11 +77,6 @@ namespace WMPDiscordRPC
             return minutes + ":" + second.ToString("D2");
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)

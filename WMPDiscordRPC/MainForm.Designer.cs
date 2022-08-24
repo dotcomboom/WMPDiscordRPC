@@ -88,7 +88,6 @@
             this.HintText.Size = new System.Drawing.Size(177, 34);
             this.HintText.TabIndex = 1;
             this.HintText.Text = "Minimizes to tray, click icon to pop up again";
-            this.HintText.Click += new System.EventHandler(this.label2_Click);
             // 
             // TrackName
             // 
