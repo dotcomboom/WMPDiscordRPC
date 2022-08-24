@@ -21,14 +21,6 @@ namespace WMPDiscordRPC
             InitializeComponent();
         }
 
-        private void NotifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            Show();
-            WindowState = FormWindowState.Normal;
-            ShowInTaskbar = true;
-            notifyIcon1.Visible = false;
-        }
-
         private void Form1_Resize(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Minimized)
@@ -83,6 +75,22 @@ namespace WMPDiscordRPC
             var minutes = seconds / 60;
             var second = seconds - (minutes * 60);
             return minutes + ":" + second.ToString("D2");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Show();
+                WindowState = FormWindowState.Normal;
+                ShowInTaskbar = true;
+                notifyIcon1.Visible = false;
+            }
         }
     }
 }
